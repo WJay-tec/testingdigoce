@@ -1,0 +1,19 @@
+{
+  "name": "testingdigoce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firstfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WJay-tec/testingdigoce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WJay-tec/testingdigoce/issues"
+  },
+  "homepage": "https://github.com/WJay-tec/testingdigoce#readme"
+}
