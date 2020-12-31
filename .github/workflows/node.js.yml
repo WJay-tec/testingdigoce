@@ -16,7 +16,7 @@ jobs:
         with: 
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USERNAME}}
-          password: ${{secrets.SSH_PASSPHRASE}}
+          key: ${{secrets.SSH_KEY}} 
           script:
             rm -r gitact
             mkdir gitact
