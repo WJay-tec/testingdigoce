@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-20.04
     steps:
       - name: SSH into digitalocean server
         uses: appleboy/ssh-action@v0.1.2
@@ -27,7 +27,7 @@ jobs:
       
   build:
     needs: deploy
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-20.04
 
     strategy:
       matrix:
