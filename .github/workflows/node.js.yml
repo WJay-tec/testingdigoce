@@ -18,7 +18,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}} 
           password: ${{secrets.SSH_PASSPHRASE}}  
           script:
-              cd gitact; git clone https://github.com/WJay-tec/testingdigoce.git
+             rm -r gitact; mkdir gitact ; cd gitact; git clone https://github.com/WJay-tec/testingdigoce.git ; echo 'successfully updated '
           
       
   build:
