@@ -16,10 +16,9 @@ jobs:
         with: 
           host: ${{secrets.SSH_HOSTIP}}
           username: ${{secrets.SSH_USERNAME}} 
-          password: ${{secrets.SSH_PASSPHRASE}} 
-          port: 22 
+          password: ${{secrets.SSH_PASSPHRASE}}  
           script:
-              script.sh
+              rm -r gitact
           
       
   build:
