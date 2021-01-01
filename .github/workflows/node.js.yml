@@ -19,7 +19,7 @@ jobs:
           password: ${{secrets.SSH_PASSPHRASE}} 
           port: 22 
           script:
-              ./script.sh
+              script.sh
           
       
   build:
