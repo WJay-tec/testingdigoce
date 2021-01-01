@@ -18,24 +18,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}} 
           password: ${{secrets.SSH_PASSPHRASE}}  
           script:
-             rm -r gitact; mkdir gitact ; cd gitact; git clone https://github.com/WJay-tec/testingdigoce.git ; echo 'successfully updated '; cd testingdigoce ; ls
+             rm -r gitact; mkdir gitact ; cd gitact; git clone https://github.com/WJay-tec/testingdigoce.git ; echo 'successfully updated '; cd testingdigoce ; ls ; npm install express ; node firstfile.js
           
       
-  build:
-    needs: deploy
-    runs-on: Ubuntu-20.04
 
-    strategy:
-      matrix:
-        node-version: [8.x]
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm install express
-    - run: node firstfile.js
-    
